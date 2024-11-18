@@ -2,31 +2,24 @@ import streamlit as st
 
 st.set_page_config(
     page_title="Stock Prediction App",
-    page_icon="😎",
+    page_icon="📈",
 )
 
 st.markdown(
-    """# 📈 **Stockastic**
-### **Predicting Stocks with ML**
+    """# 📈 **Stock Price Prediction**
+### **Machine learning project by Avishi Singh (102203055) and Shreya Singh (102203070)**
 
-**Stockastic is an ML-powered stock price prediction app built with Python and Streamlit. It utilizes machine learning models to forecast stock prices and help investors make data-driven decisions.**
+**It is an ML-powered stock price prediction app built with Python and Streamlit. It utilizes machine learning models to forecast stock prices and help investors make data-driven decisions.**
 
 ## 🏗️ **How It's Built**
 
-Stockastic is built with these core frameworks and modules:
+It is built with these core frameworks and modules:
 
 - **Streamlit** - To create the web app UI and interactivity 
 - **YFinance** - To fetch financial data from Yahoo Finance API
 - **StatsModels** - To build the ARIMA time series forecasting model
 - **Plotly** - To create interactive financial charts
 
-The app workflow is:
-
-1. User selects a stock ticker
-2. Historical data is fetched with YFinance
-3. ARIMA model is trained on the data 
-4. Model makes multi-day price forecasts
-5. Results are plotted with Plotly
 
 ## 🎯 **Key Features**
 
@@ -36,46 +29,18 @@ The app workflow is:
 - **Backtesting** - Evaluate model performance
 - **Responsive design** - Works on all devices
 
-## 🚀 **Getting Started**
+## 🔄 **Process Overview**
 
-### **Local Installation**
+- **User selects stock** - The user inputs the stock ticker for which predictions are needed.
+- **Fetch historical stock data** - Historical stock data is fetched using Yahoo Finance (via `yfinance`).
+- **Clean and preprocess data** - The data is cleaned, retaining only the 'Close' prices for prediction.
+- **Train ARIMA model** - The ARIMA model is trained using the cleaned historical data.
+- **Generate predictions for the next 90 days** - Forecasting for the next 90 days is done using the trained ARIMA model.
+- **Visualize predictions and trends** - Predictions and historical trends are displayed interactively using Plotly and Streamlit.
 
-1. Clone the repo
 
-```bash
-git clone https://github.com/user/stockastic.git
-```
-
-2. Install requirements
-
-```bash
-pip install -r requirements.txt
-```
-
-3. Change directory
-```bash
-cd streamlit_app
-```
-
-4. Run the app
-
-```bash
-streamlit run 00_😎_Main.py
-```
-
-The app will be live at ```http://localhost:8501```
-
-## 📈 **Future Roadmap**
-
-Some potential features for future releases:
-
-- **More advanced forecasting models like LSTM**
-- **Quantitative trading strategies**
-- **Portfolio optimization and tracking**
-- **Additional fundamental data**
-- **User account system**
 
 ## **⚖️ Disclaimer**
-**This is not financial advice! Use forecast data to inform your own investment research. No guarantee of trading performance.**
+**This is not financial advice, it is only made for learning. No guarantee of trading performance.**
 """
 )
