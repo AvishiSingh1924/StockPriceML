@@ -7,8 +7,8 @@ st.set_page_config(
 
 st.markdown(
     """# 📈 **Stock Price Prediction**
-### **Machine learning project by 
-Avishi Singh (102203055) and Shreya Singh (102203070)**
+### **Machine learning project by**
+### **Avishi Singh (102203055) and Shreya Singh (102203070)**
 
 **It is an ML-powered stock price prediction app built with Python and Streamlit. It utilizes machine learning models to forecast stock prices and help investors make data-driven decisions.**
 
