@@ -18,7 +18,7 @@ It is built with these core frameworks and modules:
 - **Streamlit** - To create the web app UI and interactivity 
 - **YFinance** - To fetch financial data from Yahoo Finance API
 - **StatsModels** - To build the ARIMA time series forecasting model
-- **Plotly** - To create interactive financial charts
+- **Seaborn** - To create interactive financial charts
 
 
 ## 🎯 **Key Features**
@@ -26,7 +26,6 @@ It is built with these core frameworks and modules:
 - **Real-time data** - Fetch latest prices and fundamentals 
 - **Financial charts** - Interactive historical and forecast charts
 - **ARIMA forecasting** - Make statistically robust predictions
-- **Backtesting** - Evaluate model performance
 - **Responsive design** - Works on all devices
 
 ## 🔄 **Process Overview**
